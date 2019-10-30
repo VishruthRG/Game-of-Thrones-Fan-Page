@@ -1,0 +1,55 @@
+body{
+    
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 100px;
+    font-family: 'Aclonica', sans-serif;
+    background-image: url("wae.jpg");
+}
+
+.parent{
+	background-color: #ffedc9;
+	height: 100%;
+	border: 1px black solid;
+	border-radius: 15px;
+	margin:0px;
+}
+
+.house-name{
+	color: white;
+	font-size: 50px;
+}
+
+.first{
+	float: left;
+	width: 80%;
+}
+
+.second{
+	float:right;
+	width: 19%;
+	padding-left: 5px;
+	border-left: 1px black solid;
+}
+
+#sig{
+	width: 100%;
+}
+
+#main_img{
+	width: 100%;
+}
+
+.left{
+	text-align: left;
+}
+
+.right{
+	text-align: right;
+}
+
+.left,.right{
+	border-top: 1px solid black;
+}

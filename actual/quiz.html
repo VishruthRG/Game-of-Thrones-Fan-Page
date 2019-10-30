@@ -1,0 +1,120 @@
+<html>
+    <head>
+        <title>Quiz</title>
+    </head>
+    <body>
+        <br>
+        <form action = "quiz.php" action = "post">
+            <div id="q1">
+                Question 1<br>
+                <input type = "radio"/>Option 1<br>
+                <input type = "radio"/>Option 2<br>
+                <input type = "radio"/>Option 3<br>
+                <input type = "radio"/>Option 4<br> 
+                <input type = "button" id="next_but" value = "Next"/>   <input type = "button" id="prev_but" value = "Previous"/>   
+            </div>
+            <div id="q2">
+                Question 2<br>
+                <input type = "radio"/>Option 1<br>
+                <input type = "radio"/>Option 2<br>
+                <input type = "radio"/>Option 3<br>
+                <input type = "radio"/>Option 4<br>    
+                <input type = "button" id="next_but" value = "Next"/>   <input type = "button" id="prev_but" value = "Previous"/>
+            </div>
+            <div id="q3">
+                Question 3<br>
+                <input type = "radio"/>Option 1<br>
+                <input type = "radio"/>Option 2<br>
+                <input type = "radio"/>Option 3<br>
+                <input type = "radio"/>Option 4<br>    
+                <input type = "button" id="next_but" value = "Next"/>   <input type = "button" id="prev_but" value = "Previous"/>
+            </div>
+            <div id="q4">
+                    Question 4<br>
+                <input type = "radio"/>Option 1<br>
+                <input type = "radio"/>Option 2<br>
+                <input type = "radio"/>Option 3<br>
+                <input type = "radio"/>Option 4<br>    
+                <input type = "button" id="next_but" value = "Next"/>   <input type = "button" id="prev_but" value = "Previous"/>
+            </div>
+            <div id="q5">
+                    Question 5<br>
+                <input type = "radio"/>Option 1<br>
+                <input type = "radio"/>Option 2<br>
+                <input type = "radio"/>Option 3<br>
+                <input type = "radio"/>Option 4<br>    
+                <input type = "button" id="next_but" value = "Next"/>   <input type = "button" id="prev_but" value = "Previous"/>
+            </div>
+            <div id="q6">
+                    Question 6<br>
+                <input type = "radio"/>Option 1<br>
+                <input type = "radio"/>Option 2<br>
+                <input type = "radio"/>Option 3<br>
+                <input type = "radio"/>Option 4<br>    
+                <input type = "button" id="next_but" value = "Next"/>   <input type = "button" id="prev_but" value = "Previous"/>
+            </div>
+            <div id="q7">
+                    Question 7<br>
+                <input type = "radio"/>Option 1<br>
+                <input type = "radio"/>Option 2<br>
+                <input type = "radio"/>Option 3<br>
+                <input type = "radio"/>Option 4<br>    
+                <input type = "button" id="next_but" value = "Next"/>   <input type = "button" id="prev_but" value = "Previous"/>
+            </div>
+            <div id="q8">
+                    Question 8<br>
+                <input type = "radio"/>Option 1<br>
+                <input type = "radio"/>Option 2<br>
+                <input type = "radio"/>Option 3<br>
+                <input type = "radio"/>Option 4<br>    
+                <input type = "button" id="next_but" value = "Next"/>   <input type = "button" id="prev_but" value = "Previous"/>
+            </div>
+            <div id="q9">
+                    Question 9<br>
+                <input type = "radio"/>Option 1<br>
+                <input type = "radio"/>Option 2<br>
+                <input type = "radio"/>Option 3<br>
+                <input type = "radio"/>Option 4<br>    
+                <input type = "button" id="next_but" value = "Next"/>   <input type = "button" id="prev_but" value = "Previous"/>
+            </div>
+            <div id="q10">
+                    Question 10<br>
+                <input type = "radio"/>Option 1<br>
+                <input type = "radio"/>Option 2<br>
+                <input type = "radio"/>Option 3<br>
+                <input type = "radio"/>Option 4<br>    
+                <input type = "button" id="next_but" value = "Next"/>   <input type = "button" id="prev_but" value = "Previous"/>
+            </div>
+    </body>
+    <script>
+        var fun_obj = {
+            next : function(e){
+                e.style.display = "block";
+            },
+        }
+        var q1 = document.getElementById("q1");
+        var q2 = document.getElementById("q2");
+        q2.style.display = "none";
+        var q3 = document.getElementById("q3");
+        q3.style.display = "none";
+        var q4 = document.getElementById("q4");
+        q4.style.display = "none";
+        var q5 = document.getElementById("q5");
+        q5.style.display = "none";
+        var q6 = document.getElementById("q6");
+        q6.style.display = "none";
+        var q7 = document.getElementById("q7");
+        q7.style.display = "none";
+        var q8 = document.getElementById("q8");
+        q8.style.display = "none";
+        var q9 = document.getElementById("q9");
+        q9.style.display = "none";
+        var q10 = document.getElementById("q10");
+        q10.style.display = "none";
+
+        var next_but = document.getElementById("next_but");
+        next_but.addEventListener("click",fun_obj.next,false);
+        
+        var prev_but = document.getElementById("prev_but");
+    </script>
+</html>

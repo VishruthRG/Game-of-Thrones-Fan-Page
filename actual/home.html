@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Game of Thrones</title>
+	<link href="https://fonts.googleapis.com/css?family=Aclonica" rel="stylesheet">
+    <link rel="shortcut icon" href="E:sem3WT-project\favicon.ico" type="image/x-icon">
+    <link rel="icon" href="E:sem3\WT-Project\favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="style_nav.css" type="text/css">
+        
+</head>
+<body id="home">
+	<ul>
+		<li><a href="home.html">Home</a></li>
+    	<li><a href="home.html #houses">Noble Houses</a></li>
+    	<li><a href="#timeline">Timeline</a></li>
+    	<li style="float:right"><a href="about.html">About</a></li>
+	</ul>
+	
+	<div id="houses">
+		<img src="Noble_Houses_menu.png" alt="NOBLE HOUSES" id="nob" onclick="obj.further()"/>
+    	<input type="button" value="Show More" onclick="obj.showMore()"/>
+		<table id="show">
+			<tr>
+				<td><img src="stark.png" alt="House Stark" class="back"/><a href="house_stark.html"><div class="front">House Stark</div></a></td>
+				<td><img src="arryn.png" alt="House Arryn" class="back"/><a href="house_arryn.html"><div class="front">House Arryn</div></a></td>
+				<td><img src="baratheon.png" alt="House Baratheon" class="back"/><a href="house_baratheon.html"><div class="front">House Baratheon</div></td></a>
+				<td><img src="bolton.png" alt="House Bolton" class="back"/><a href="house_bolton.html"><div class="front">House Bolton</div></td></a>
+			</tr>
+			<tr>
+				<td><img src="frey.png" alt="House frey" class="back"/><a href="house_frey.html"><div class="front">House Frey</div></td></a>
+				<td><img src="greyjoy.png" alt="House greyjoy" class="back"/><a href="house_greyjoy.html"><div class="front">House Greyjoy</div></td></a>
+				<td><img src="lannister.png" alt="House lannister" class="back"/><a href="house_lannister.html"><div class="front">House Lannister</div></td></a>
+				<td><img src="martell.png" alt="House martell" class="back"/><a href="house_martell.html"><div class="front">House Martell</div></td></a>
+			</tr>
+			<tr>
+				<td><img src="mormont.png" alt="House mormont" class="back"/><a href="house_mormont.html"><div class="front">House Mormont</div></td></a>
+				<td><img src="targaryen.png" alt="House targaryen" class="back"/><a href="house_targaryen.html"><div class="front">House Targeryen</div></td></a>
+				<td><img src="tully.png" alt="House tully" class="back"/><a href="house_tully.html"><div class="front">House Tully</div></td></a>
+				<td><img src="tyrell.png" alt="House tyrell" class="back"/><a href="house_tyrell.html"><div class="front">House Tyrell</div></td></a>
+			</tr>
+			<tr>
+				<td><img src="baelish.png" alt="House baelish" class="back"/><a href="house_baelish.html"><div class="front">House Baelish</div></td></a>
+				<td><img src="estermont.png" alt="House estermont" class="back"/><a href="house_estermont.html"><div class="front">House Estermont</div></td></a>
+				<td><img src="tarly.png" alt="House tarly" class="back"/><a href="house_tarly.html"><div class="front">House Tarly</div></td></a>
+				<td><img src="watch.png" alt="House watch" class="back"/><a href="house_watch.html"><div class="front">House Watch</div></td></a>
+			</tr>
+		</table>
+	</div>
+
+	<div id="timeline">
+		<img src="Timeline_and_Major_Events_menu.png" alt="Timeline and Major Events" id="tm"/>
+		
+	</div>
+</body>
+<script>
+	
+	var ev = document.getElementById("show");
+	var ev1 =document.getElementById("nob");
+	var obj={
+		showLess : function(){
+			ev.style.visibility="hidden";
+			ev.parentNode.children[1].value="Show More";
+			ev.parentNode.children[1].addEventListener("click",obj.showMore,false);
+			ev.
+		},
+		showMore: function(){
+			
+			ev.style.visibility="visible";
+			ev.parentNode.children[1].value="Show Less";
+			ev.parentNode.children[1].addEventListener("click",obj.showLess,false);
+			
+			
+		},
+		further : function(){
+			ev1.style.width="100%";
+		},
+		
+	}
+</script>
+</html>

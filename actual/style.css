@@ -1,0 +1,118 @@
+body{
+    
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    font-family: 'Aclonica', sans-serif;
+}
+
+#start{
+    background-image: url("wallpaper.jpg");
+}
+
+#home{
+        background-image: url("wae.jpg");
+}
+
+audio{
+    visibility: hidden;
+}
+
+button{
+    background: #636363;
+    color: #000;
+    font-family: Sans-serif;
+    font-size: 20px;
+    
+    line-height: 60px;
+    text-align: center;
+    border: 0;
+    transition: all 0s ease 0s;
+}
+
+#gotomap{
+    position: absolute;
+    bottom: 20px;
+    left:50%;
+}
+#gotomap:hover {
+  background: #808080;
+}
+
+#houses{
+    background-color: #00273e;
+    border: 3px black solid;
+    margin:100px;
+    
+    
+    
+}
+#timeline{
+    background-color: #00273e;
+    border: 3px black solid;
+    margin:100px;
+}
+
+#nob{
+    width: 50%;
+    margin-left: 300px;
+    margin-top: 40px;
+    
+}
+
+#tm{
+    width: 50%;
+    margin-left: 300px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+table{
+    
+    height:40px;
+    width: 100%;
+    color: #000;
+    font-family: Sans-serif;
+    font-size: 20px;
+    visibility: hidden;
+    
+}
+
+td{
+    border: 1px black solid;
+    text-align: center;
+    background-color: black;
+    width: 25%;
+    height: 250px;
+    text-align: center;
+    position: relative;
+}
+
+.back{
+    
+    width: 100%;
+    opacity: 0.5;
+}
+
+.front{
+    color: #fefffe;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    font-size: 25px;
+    text-align: center;
+    padding-top: 50%;
+    transition-delay: 0.3s;
+    
+}
+
+
+.front:hover{
+    opacity: 0;
+    cursor: pointer;
+
+}
+
